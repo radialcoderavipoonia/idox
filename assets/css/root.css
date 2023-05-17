@@ -7,6 +7,10 @@
     list-style-type: none !important;
     box-sizing: border-box !important;
 }
+body{
+    overflow-x: hidden;
+}
+
 
 .mycontainer {
     max-width: 1140px;
@@ -120,6 +124,10 @@
 
 .bg_body {
     background-color: var(--color-bg_body);
+}
+
+.button_bg {
+    background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
 }
 
 /* media screen  */
