@@ -10,8 +10,6 @@
 body{
     overflow-x: hidden;
 }
-
-
 .mycontainer {
     max-width: 1140px;
     margin-left: auto;
@@ -32,6 +30,7 @@ body{
 
 :root {
     /* font sizes  */
+    
     --fs-xsm: 12px;
     --fs-sm: 13px;
     --fs-md: 14px;
