@@ -7,7 +7,8 @@
     list-style-type: none !important;
     box-sizing: border-box !important;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -32,7 +33,6 @@ body{
 
 :root {
     /* font sizes  */
-    
     --fs-xsm: 12px;
     --fs-sm: 13px;
     --fs-md: 14px;
@@ -135,6 +135,7 @@ body{
 @media (max-width:576px) {
     :root {
         /* font sizes  */
+
         --fs-xsm: 12px;
         --fs-sm: 13px;
         --fs-md: 14px;
