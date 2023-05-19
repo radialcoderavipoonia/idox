@@ -41,7 +41,7 @@
     filter: blur(123.5px);
     z-index: 0;
     position: absolute;
-    top: 0;
+    top: -20;
     right: 50;
 }
 
@@ -245,6 +245,14 @@
 
 @media(max-width:992px) {
     .w-100-md {
+        width: 100% !important;
+    }
+
+
+}
+
+@media(max-width:1192px) {
+    .w-100-xl {
         width: 100% !important;
     }
 
