@@ -239,12 +239,13 @@
     display: none;
 }
 
- .integration_slider .slick-track {
-     height: 100px;
- }
- .integration_slider .slick-dots {
-     display: none !important;
- }
+.integration_slider .slick-track {
+    height: 100px;
+}
+
+.integration_slider .slick-dots {
+    display: none !important;
+}
 
 /* media screen  */
 @media (max-width:1600px) {
@@ -288,6 +289,13 @@
         backdrop-filter: blur(16.5px);
         z-index: 99 !important;
         transition: all .5s;
+    }
+
+    .best_plan_s .border_r {
+
+
+        border-bottom: 1px solid #fbfdff51;
+
     }
 
     .nav_icon,
@@ -343,7 +351,7 @@
     .d_none_lg {
         display: none !important;
     }
-   
+
 }
 
 @media (max-width:768px) {
