@@ -7,6 +7,10 @@
     margin-bottom: 0;
 }
 
+ul {
+    margin: 0 !important;
+}
+
 .best_plan_s .mainpara {
     font-family: 'Plus Jakarta Sans';
     font-size: var(--fs-2xl);
@@ -30,6 +34,14 @@
 
 .pl_23 {
     padding-left: 23px;
+}
+
+.mt_-2 {
+    margin-top: -2px;
+}
+
+.mb_-2 {
+    margin-bottom: -2px;
 }
 
 .best_plan_s button {
@@ -155,6 +167,7 @@
     color: var(--color-white);
     font-size: var(--fs-xl);
     transition: all 300ms;
+    font-family: 'Plus Jakarta Sans';
 }
 
 
@@ -175,9 +188,8 @@ footer p {
     line-height: 152.18%;
     color: var(--color-white);
     opacity: 0.6;
-    max-width: 226px;
     margin-bottom: 0;
-    padding-top: 19px;
+    margin-top: 27px;
 }
 
 .footer_icon {
@@ -240,9 +252,6 @@ footer ul li a:hover::before {
     width: 100%;
 }
 
-footer ul {
-    padding-top: 16px;
-}
 
 footer ul li {
     padding-top: 10px;
@@ -257,6 +266,7 @@ footer h3 {
     line-height: 20px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin: 0;
 
     /* White */
 
@@ -264,44 +274,15 @@ footer h3 {
 
 }
 
-footer::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    opacity: 0.2;
+.footer_line {
     border: 1px solid #FBFDFF;
-    bottom: 7%;
+    opacity: 0.2;
+    width: 100%;
+    height: 0px;
+    margin-top: 50px;
 }
 
 
-@media (min-width:576px) {
-    footer::before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        opacity: 0.2;
-        border: 1px solid #FBFDFF;
-        bottom: 8%;
-    }
-
-}
-
-@media (min-width:768px) {
-    footer::before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        opacity: 0.2;
-        /* White */
-
-        border: 1px solid #FBFDFF;
-        bottom: 12%;
-    }
-
-}
 
 @media (min-width:992px) {
     .bottom_row_border::before {
@@ -317,27 +298,5 @@ footer::before {
         border-right: none;
     }
 
-    footer::before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        opacity: 0.2;
-        border: 1px solid #FBFDFF;
-        bottom: 13%;
-    }
-
-}
-
-@media (min-width:1200px) {
-    footer::before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        opacity: 0.2;
-        border: 1px solid #FBFDFF;
-        bottom: 20%;
-    }
 
 }
