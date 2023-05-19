@@ -87,6 +87,14 @@
     left: -200px;
 }
 
+.left_-50 {
+    left: -50px;
+}
+
+.right_-50 {
+    right: -50px;
+}
+
 .top_-120 {
     top: -120px;
 }
@@ -144,8 +152,9 @@
     background-color: white;
     z-index: 5;
 }
+
 /* z index  */
-.z_11{
+.z_11 {
     z-index: 11;
 }
 
@@ -169,7 +178,7 @@
     height: 134.14px;
     position: absolute;
     left: -161px;
-    z-index: 2;
+    z-index: -1;
     top: -70px;
 }
 
