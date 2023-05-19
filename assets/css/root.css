@@ -165,7 +165,7 @@ body {
         --fs-2xl: 18px;
         --fs-3xl: 20px;
         --fs-4xl: 32px;
-        --fs-5xl: 44px;
+        --fs-5xl: 34px;
         --fs-6xl: 48px;
 
 
@@ -188,7 +188,7 @@ body {
         --fs-2xl: 18px;
         --fs-3xl: 20px;
         --fs-4xl: 32px;
-        --fs-5xl: 44px;
+        --fs-5xl: 34px !important;
         --fs-6xl: 48px;
 
 
@@ -209,9 +209,9 @@ body {
         --fs-lg: 15px;
         --fs-xl: 16px;
         --fs-2xl: 18px;
-        --fs-3xl: 20px;
+        --fs-3xl: 16px;
         --fs-4xl: 32px;
-        --fs-5xl: 44px;
+        --fs-5xl: 35px;
         --fs-6xl: 48px;
 
 
