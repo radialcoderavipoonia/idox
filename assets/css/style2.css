@@ -1,5 +1,5 @@
-.top_arrow{
-transform: rotate(-90deg);
+.top_arrow {
+    transform: rotate(-90deg);
 }
 
 .glow {
@@ -204,6 +204,7 @@ transform: rotate(-90deg);
     border-radius: 100%;
     background-color: white;
     text-indent: -9999px;
+    transition: all 300ms linear;
 }
 
 .slick-dots li.slick-active button {

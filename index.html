@@ -470,7 +470,7 @@
                             cloud-based solutions keep everyone on the same page, all backed by our SOC 2 and
                             ISO 27001 certifications.</p>
                         <button
-                            class="learn_btn mt-4 border-0 color_white ff_plus_jakarta fw-semibold fs_xl text-capitalize">learn
+                            class="learn_btn mt-4 border-0 color_white ff_plus_jakarta fw-semibold fs_xl text-capitalize transition_300ms">learn
                             more</button>
                     </div>
                 </div>
@@ -488,7 +488,7 @@
                 <div class="d-flex justify-content-center align-items-center mt-5 pt-4 position-relative responsive">
                     <div class="glow5 d-none d-md-block"></div>
                     <div>
-                        <div class="position-relative mx-auto">
+                        <div class="position-relative ">
                             <div class="arrow d-none-11"><img class="w-100" src="/assets/images/svg/arrow.svg"
                                     alt="arrow">
                             </div>
@@ -501,7 +501,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="position-relative mx-auto">
+                        <div class="position-relative ">
                             <div class="arrow d-none-11"><img src="/assets/images/svg/arrow.svg" alt="arrow"></div>
                             <img class="w-100-xl" src="/assets/images/png/Group-97392.png" alt="img">
                         </div>
@@ -512,8 +512,8 @@
                         </div>
                     </div>
                     <div>
-                        <div class="position-relative mx-auto"><img class="w-100-xl"
-                                src="/assets/images/png/Group-97391.png" alt="arrow">
+                        <div class="position-relative "><img class="w-100-xl" src="/assets/images/png/Group-97391.png"
+                                alt="arrow">
                             <div class="arrow d-none-11"><img src="/assets/images/svg/arrow.svg" alt="arr"></div>
                         </div>
                         <div>
@@ -602,7 +602,8 @@
                             carries out time-intensive manual redaction processes, there’s a trade-off between
                             security and efficiency.
                             iDox.ai Redact offers the best of both worlds with thorough, automatic redactions.</p>
-                        <div> <button class="color_white padding-button gap-8 radius-40 btn-bg btn-shadow mt-4">Learn
+                        <div> <button
+                                class="color_white padding-button gap-8 radius-40 btn-bg btn-shadow mt-4 ff_plus_jakarta">Learn
                                 More</button></div>
                     </div>
                     <div class="col-lg-5 col-10 z-1">
@@ -628,7 +629,7 @@
                         <div class="col-lg-4 col-md-6 border_r h_effect">
                             <div class="box d-flex flex-column align-items-center">
                                 <div class="pb-4 d-flex flex-column align-items-center ">
-                                    <h4>$0.99</h4>
+                                    <h4 class="transition_300ms">$0.99</h4>
                                     <p class="mainpara">7 Days</p>
                                 </div>
                                 <div class="pt-md-5 pb-5">
@@ -645,13 +646,13 @@
                                         <p class="pl_23 secound_paras">After 7 day, auto renews plan</p>
                                     </div>
                                 </div>
-                                <div class="pt-lg-5 pb-4"><button>select</button></div>
+                                <div class="pt-lg-5 pb-4"><button class="transition_300ms">Select</button></div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-5 mt-md-0 border_r h_effect z-2">
                             <div class="box d-flex flex-column align-items-center ">
                                 <div class="pb-4 d-flex flex-column align-items-center">
-                                    <h4>$490</h4>
+                                    <h4 class="transition_300ms">$490</h4>
                                     <p class="mainpara">Business</p>
                                 </div>
                                 <div class="pt-md-5 pb-5">
@@ -668,13 +669,13 @@
                                         <p class="pl_23 secound_paras">Maximum 100 pages per doc.</p>
                                     </div>
                                 </div>
-                                <div class="pt-lg-5 pb-4"><button>select</button></div>
+                                <div class="pt-lg-5 pb-4"><button class="transition_300ms">Select</button></div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-5 mt-lg-0  h_effect">
                             <div class="box d-flex flex-column align-items-center pt-lg-0 pt-5 pb-lg-0 pb-5 ">
                                 <div class="pb-4 d-flex flex-column align-items-center">
-                                    <h4>$190</h4>
+                                    <h4 class="transition_300ms">$190</h4>
                                     <p class="mainpara">Basic</p>
                                 </div>
                                 <div class="pt-md-5 pb-5 ">
@@ -691,7 +692,7 @@
                                         <p class="pl_23 secound_paras">Maximum 100 pages per doc.</p>
                                     </div>
                                 </div>
-                                <div class="pt-lg-5 pb-4"><button>select</button></div>
+                                <div class="pt-lg-5 pb-4"><button class="transition_300ms">Select</button></div>
                             </div>
                         </div>
                     </div>
@@ -717,7 +718,7 @@
                             lacus mauris adipiscing commodo purus. Lectus etiam arcu sagittis pellentesque hendrerit.
                         </p>
                         <div class="input_box d-flex justify-content-between my-lg-4 my-3  flex-column flex-sm-row">
-                            <input type="text" placeholder="Enter your email here" class="py-3 py-sm-0 w-100 px-3">
+                            <input type="text" placeholder="Enter your email here" class="py-3 py-sm-0 w-100 ">
                             <button class="ws_no">Sign up now</button>
                         </div>
                     </div>
@@ -1005,7 +1006,7 @@
                 {
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 },
@@ -1021,11 +1022,12 @@
     </script>
     <script>
         $('.responsive').slick({
-            dots: true,
-            autoplay: true,
+            dots: false,
+            autoplay: false,
             autoplaySpeed: 2000,
             infinite: true,
             arrows: false,
+            draggable: false,
             slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [

@@ -63,6 +63,10 @@ ul {
     color: #0066FF !important;
 }
 
+.transition_300ms {
+    transition: all 300ms linear;
+}
+
 .best_plan_s .h_effect:hover button {
     background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
     box-shadow: 0px 4px 32px rgba(39, 70, 237, 0.5);
@@ -101,15 +105,11 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.h_156{
+.h_156 {
     height: 156px;
 }
 
-.best_plan_s .border_r {
 
-
-    border-right: 1px solid #fbfdff51;
-}
 
 .border_r_lg {
     border-right: 1px solid #fbfdff51;
@@ -138,7 +138,7 @@ ul {
 }
 
 .input_box {
-    width: 50%;
+    width: 40%;
     background-color: #13222f;
     border-radius: 29px;
 }
@@ -157,6 +157,7 @@ ul {
     color: #FBFDFF;
     opacity: 0.8;
     font-family: 'Plus Jakarta Sans';
+    padding-left: 33.71px;
 
 }
 
@@ -165,13 +166,15 @@ ul {
 
     font-size: 16px;
     line-height: 170%;
-    color: #FBFDFF;
+    background: rgba(251, 253, 255, 1);
+
     opacity: 0.8;
 }
 
 .input_box button {
     padding: 13px 32px;
-    background-color: #0066FF;
+    background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
+    box-shadow: 0px 4px 32px rgba(39, 70, 237, 0.5);
     border-radius: 40px;
     border: none;
     font-weight: 500;
@@ -293,6 +296,13 @@ footer h3 {
     margin-top: 50px;
 }
 
+.best_plan_s .border_r {
+
+
+    border-bottom: 1px solid #fbfdff51;
+
+}
+
 
 
 @media (min-width:992px) {
@@ -307,6 +317,13 @@ footer h3 {
 
     .border_r_lg {
         border-right: none;
+    }
+
+    .best_plan_s .border_r {
+
+
+        border-right: 1px solid #fbfdff51;
+
     }
 
 
