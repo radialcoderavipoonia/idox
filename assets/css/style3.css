@@ -41,7 +41,7 @@
     filter: blur(123.5px);
     z-index: 0;
     position: absolute;
-    top: -20;
+    top: -20%;
     right: 50;
 }
 
@@ -96,6 +96,8 @@
 
 .btn-bg:hover.btn-shadow {
     box-shadow: 0px 4px 32px 0px #2746ED80;
+    transform: translateY(-20px);
+    transition: 300ms;
 }
 
 .tab {
