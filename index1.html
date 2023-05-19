@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>idoz</title>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./assets/images/png/favicon-32x32.png" type="image/x-icon">
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -24,6 +28,13 @@
 </head>
 
 <body>
+    <button onclick="backToTop()" id="topbtn" class="position-fixed backToTop border-0 z-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+            class="bi bi-arrow-up-square " viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </button>
     <!-- hero section starts  -->
     <section class="bg_body">
         <header class=" position-relative z-2">
@@ -72,7 +83,7 @@
             </div>
             <div class="mycontainer pt-5 pb-md-5 position-relative z-2">
                 <div class="row pt_110 pb_34 justify-content-around align-items-center">
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-6 col-12" data-aos="fade-right"   data-aos-duration="1000">
                         <div class="d-flex align-items-center">
                             <span class="shadow_circle "></span>
                             <span class="line"></span>
@@ -82,7 +93,7 @@
                         <h1 class="pt-2 m-0 ff_plus_jakarta fw_700 fs_6xl color_white">AI powered document compliance
                             solution</h1>
                     </div>
-                    <div class="col-md-5 col-12">
+                    <div class="col-md-5 col-12" data-aos="fade-left"   data-aos-duration="1000">
                         <p class="ff_plus_jakarta fw_400 fs_xl color_white opacity_07 m-0 pt_40_md">iDox.ai provides the
                             world’s most
                             advanced AI powered redaction solution for organizations to scan and detect within
@@ -95,17 +106,17 @@
                 <span class="shadow_circle_2 d_none_lg"></span>
                 <span class="shadow_circle_3 d_none"></span>
                 <div class="pt_34 pb_34">
-                    <div class="row justify-content-center pt-5 pb-5">
+                    <div class="row justify-content-center pt-5 pb-5" data-aos="fade-down"data-aos-duration="1000">
                         <div class="col-sm-10 col-12">
                             <div class="position-relative ">
                                 <img src="./assets/images/png/accuracy.png" alt="accuracy"
-                                    class="position-absolute top_48 right_-94 right_-50_xxl right_0_sm z-1 w_20_lg">
+                                    class="position-absolute top_48 right_-94 right_-50_xxl right_0_sm z-1 w_20_lg" data-aos="fade-left"   data-aos-duration="1000">
                                 <img src="./assets/images/png/cost_saving.png" alt="cost saving"
-                                    class="position-absolute top_29 left_-94 left_-50_xxl left_0_sm z-1 w_20_lg">
+                                    class="position-absolute top_29 left_-94 left_-50_xxl left_0_sm z-1 w_20_lg" data-aos="fade-right"   data-aos-duration="1000">
                                 <img src="./assets/images/png/file_format.png" alt="file format"
-                                    class="position-absolute top_72 left_-134 left_-50_xxl left_0_sm z-1 w_20_lg">
+                                    class="position-absolute top_72 left_-134 left_-50_xxl left_0_sm z-1 w_20_lg" data-aos="fade-right"   data-aos-duration="1000">
                                 <img src="./assets/images/png/time_saving.png" alt="time saving"
-                                    class="position-absolute right_11 bottom_-45 bottom_-20_lg bottom_0_sm z-1 w_20_lg">
+                                    class="position-absolute right_11 bottom_-45 bottom_-20_lg bottom_0_sm z-1 w_20_lg"data-aos="fade-up" data-aos-duration="1000">
                                 <img src="./assets/images/png/blue_hero_shadow.png" alt="blue hero shadow"
                                     class="position-absolute bottom_-42 left_-200 overflow-hidden w-100 mw_420 h_400">
                                 <img src="./assets/images/png/hero_image.png" alt="hero main image" class="w-100">
@@ -151,12 +162,12 @@
         <!-- Compliance Security Trust section starts  -->
         <div class="mycontainer">
             <div class="row justify-content-between align-items-center pb-5">
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12" data-aos="fade-down-right" data-aos-duration="1000">
                     <div>
                         <img src="./assets/images/png/AI_image.png" alt=" AI image " class="w-100">
                     </div>
                 </div>
-                <div class="col-md-5 col-12">
+                <div class="col-md-5 col-12" data-aos="fade-down-left" data-aos-duration="1000">
                     <p class="ff_plus_jakarta fw_500 fs_5xl color_white m-0 lh_55">Compliance Security Trust</p>
                     <p class="ff_plus_jakarta fw_400 fs_xl color_white opacity_07 pt-2 m-0">Posuere ultrices aliquet
                         risus malesuada viverra nec praesent. Sed nisl facilisi augue.</p>
@@ -173,6 +184,31 @@
         function shownav() {
             document.getElementById("showul").classList.toggle("nav_left0")
         }
+    </script>
+    <!-- back to top  -->
+    <script>
+
+        const topbtn = document.getElementById('topbtn');
+
+
+        window.onscroll = function () { topscroll() };
+
+        function topscroll() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topbtn.style.display = "block";
+            }
+            else {
+                topbtn.style.display = "none";
+            }
+        }
+
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
     </script>
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -235,9 +271,14 @@
                         slidesToShow: 2
                     }
                 }
-                
+
             ]
         });
+    </script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
