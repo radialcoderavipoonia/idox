@@ -168,7 +168,7 @@
     white-space: nowrap;
 }
 
-@media(min-width:1080px) {
+@media(min-width:1200px) {
     .bottom-border {
         max-width: 1138.16px;
         height: 1px;
@@ -198,7 +198,6 @@
         opacity: 20%;
         position: absolute;
         top: 55%;
-
         display: flex;
     }
 

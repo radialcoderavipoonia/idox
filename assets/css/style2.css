@@ -1,3 +1,7 @@
+.top_arrow{
+transform: rotate(-90deg);
+}
+
 .glow {
     width: 433.45px;
     height: 422.21px;

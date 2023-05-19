@@ -34,11 +34,10 @@
 <body>
     <section class="bg_body overflow-x-hidden">
         <!-- hero section starts  -->
-
         <header class=" position-relative z_11">
             <div class="nav_bg position-fixed w-100 top-0 z_11">
                 <!-- nav bar starts  -->
-                <nav class="mycontainer ">
+                <nav class="mycontainer container-fluid">
                     <div>
                         <div class="d-flex justify-content-between align-items-center position-relative z-3">
                             <div class="pt-3 pb-3">
@@ -66,20 +65,22 @@
                                     </li>
                                 </ul>
                             </div>
-                            <span class="menuicon d-none " id="shownav" onclick="shownav()">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
+                            <div class="nav-icon d-lg-none" id="shownav" onclick="shownav()">
+                                <div class="nav_icon" onclick="myFunction(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                                </>
+                            </div>
                         </div>
-                    </div>
                 </nav>
                 <!-- nav bar ends  -->
             </div>
             <div class="position-absolute top_-40 left_-50 right_-50">
                 <img src="./assets/images/png/hero_bg_image.png" alt="hero bg image " class="w-100">
             </div>
-            <div class="mycontainer pt-5 pb-md-5 position-relative z-2">
+            <div class="mycontainer container pt-5 pb-md-5 position-relative z-2">
                 <div class="row pt_110 pb_34 justify-content-around align-items-center">
                     <div class="col-md-6 col-12 position-relative z-3" data-aos="fade-right" data-aos-duration="1000">
                         <div class="d-flex align-items-center">
@@ -132,16 +133,13 @@
                 </div>
             </div>
         </header>
-        <!-- hero section ends  -->
         <!-- slider section starts  -->
         <div class=" pb-3">
             <p class="pt-4 ff_plus_jakarta fw_400 fs_3xl opacity_07 color_white m-0 text-center">In collaboration
                 with</p>
         </div>
-
         <div class="pb-5">
             <div class=" ps-3 pe-3 pt-2 pb-2 bg_black_slider center">
-
                 <img src="./assets/images/png/nhs.png" alt="nhs logo" class=" ps-3 pe-3 gray">
                 <img src="./assets/images/png/cbcs.png" alt="cbcs logo" class=" ps-3 pe-3 gray">
                 <img src="./assets/images/png/air_smith.png" alt="air smith logo" class=" ps-3 pe-3 gray">
@@ -164,7 +162,7 @@
         </div>
         <!-- slider section ends  -->
         <!-- Compliance Security Trust section starts  -->
-        <div class="mycontainer">
+        <div class="mycontainer container">
             <div class="row justify-content-between align-items-center pb-5">
                 <div class="col-md-6 col-12" data-aos="fade-down-right" data-aos-duration="1000">
                     <div>
@@ -176,7 +174,7 @@
                     <p class="ff_plus_jakarta fw_400 fs_xl color_white opacity_07 pt-2 m-0">Posuere ultrices aliquet
                         risus malesuada viverra nec praesent. Sed nisl facilisi augue.</p>
                     <button
-                        class="ff_plus_jakarta fw_600 fs_xl color_white pt_13 pb_13 pl_32 pr_32 br_40 button_bg mt_28 border-0 hover_button">watch
+                        class="ff_plus_jakarta fw_600 fs_xl color_white pt_13 pb_13 pl_32 pr_32 br_40 button_bg mt_28 border-0 hover_button text-capitalize">watch
                         demo video</button>
                 </div>
             </div>
@@ -323,7 +321,7 @@
         <section class=" py-5  position-relative">
             <div class="container mycontainer pb-5">
                 <div class="row justify-content-lg-between justify-content-center align-items-center">
-                    <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="col-lg-5">
                         <h2 class="color_white ff_plus_jakarta fw-medium fs_5xl mb-5">How We Bring Value</h2>
                         <div class="d-flex flex-column gap-3 position-relative">
                             <div class="glow2 position-absolute end-0"></div>
@@ -377,12 +375,11 @@
                                         </svg>
                                     </span>
                                 </div>
-                                <p class="mb-0 color_white ff_plus_jakarta fw-medium fs_2xl">Labor Hours Gained Back
-                                </p>
+                                <p class="mb-0 color_white ff_plus_jakarta fw-medium fs_2xl">Labor Hours Gained Back</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-9 pt-lg-0 pt-4" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="col-lg-6 col-9 pt-lg-0 pt-4">
                         <div class="glow position-absolute right_20 bottom-0 z-2"></div>
                         <img src="./assets/images/png/face_img.png" alt="face_img" class="w-100">
                     </div>
@@ -394,7 +391,8 @@
             <div class="py-lg-5">
                 <div class="glow2 position-absolute start_36 w-25"></div>
                 <div class="py-lg-5">
-                    <h2 class="color_white ff_plus_jakarta fw-medium fs_5xl mb-5 text-center">Testimonials</h2>
+                    <h2 class="color_white ff_plus_jakarta fw-medium fs_5xl mb-5 text-center position-relative z-3">
+                        Testimonials</h2>
                     <div class="main">
                         <div class="slider slide-show" data-aos="zoom-in-down" data-aos-duration="1000">
                             <div class="slider_box d-flex flex-column justify-content-center">
@@ -479,9 +477,6 @@
             </div>
         </section>
 
-
-
-
         <!-- 3rd section  -->
         <section class="py-5 my-3">
             <div class="container mycontainer">
@@ -490,12 +485,9 @@
                     10
                     page document
                 </p>
-
-
-
-                <div class="row justify-content-center align-items-center mt-5 pt-4 position-relative">
+                <div class="d-flex justify-content-center align-items-center mt-5 pt-4 position-relative responsive">
                     <div class="glow5 d-none d-md-block"></div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 px-sm-5 col-10">
+                    <div>
                         <div class="position-relative mx-auto">
                             <div class="arrow d-none-11"><img class="w-100" src="/assets/images/svg/arrow.svg"
                                     alt="arrow">
@@ -508,7 +500,7 @@
                                 file</h5>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 px-sm-5 col-10">
+                    <div>
                         <div class="position-relative mx-auto">
                             <div class="arrow d-none-11"><img src="/assets/images/svg/arrow.svg" alt="arrow"></div>
                             <img class="w-100-xl" src="/assets/images/png/Group-97392.png" alt="img">
@@ -519,39 +511,33 @@
                             </h5>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 px-sm-5 col-10">
+                    <div>
                         <div class="position-relative mx-auto"><img class="w-100-xl"
                                 src="/assets/images/png/Group-97391.png" alt="arrow">
                             <div class="arrow d-none-11"><img src="/assets/images/svg/arrow.svg" alt="arr"></div>
                         </div>
-
                         <div>
                             <h5 class="color_white py-4 text-start ff_plus_jakarta fw-medium py-4 mb-0 fs_3xl">Auto
                                 Highlight by AI
                             </h5>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6  px-sm-5 col-10">
+                    <div>
                         <div>
                             <img class="w-100-xl" src="/assets/images/png/Group-97393.png" alt="adding">
                         </div>
                         <div>
                             <h5
                                 class="color_white py-4 text-start ff_plus_jakarta fw-medium py-4 mb-0 fs_3xl ws-nowrap">
-                                Doc.
-                                has
-                                been
-                                redacted</h5>
+                                Doc. has been redacted</h5>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center py-5"><button
-                        class="color_white padding-button gap-8 radius-40 btn_shoadow btn-bg btn-shadow">Try
+                        class="color_white padding-button radius-40 btn-bg ff_plus_jakarta fw-semibold fs_xl">Try
                         Now</button> </div>
-
             </div>
         </section>
-
 
         <!-- Our Integrations -->
         <section class="py-5 my-3">
@@ -559,50 +545,49 @@
                 <div class="glow-3 d-none d-sm-block">
                 </div>
                 <h5 class="text-center color_white fs_5xl ff_plus_jakarta fw-medium py-4">Our Integrations</h5>
-
-                <div class="row align-items-center justify-content-center pt-5 position-relative">
+                <div class="row align-items-center justify-content-center pt-xl-5 position-relative">
                     <div class="bottom-border"></div>
                     <div class="ist-line"></div>
                     <div class="sec-line"></div>
                     <div class="third-line"></div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="d-flex justify-content-center align-items-center p-5 "><img
-                                src="/assets/images/svg/google.svg" alt=""></div>
+                    <div class="row integration_slider">
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <div class="d-flex justify-content-center align-items-center p-5 "><img
+                                    src="/assets/images/svg/google.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  ">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/dropbox.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/box.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/nd.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  p-3">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/exchange.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  p-3 pe-5">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/amazon.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  p-3 ps-5">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/showin.svg" alt=""></div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+                            <div class="d-flex justify-content-center align-items-center p-5"><img
+                                    class="curser-pointer" src="/assets/images/svg/onedrive.svg" alt=""></div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6  ">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/dropbox.svg" alt=""></div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/box.svg" alt=""></div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/nd.svg" alt=""></div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6  p-3">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/exchange.svg" alt=""></div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6  p-3 pe-5">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/amazon.svg" alt=""></div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6  p-3 ps-5">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/showin.svg" alt=""></div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 p-3">
-                        <div class="d-flex justify-content-center align-items-center p-5"><img class="curser-pointer"
-                                src="/assets/images/svg/onedrive.svg" alt=""></div>
-                    </div>
-
                 </div>
 
             </div>
         </section>
-
         <!-- tabs section -->
         <section class="pb-lg-5">
             <div class="container mycontainer position-relative">
@@ -713,15 +698,14 @@
 
 
                 </div>
-                <div class="glow position-absolute abs_circle_left "></div>
-                <div class="glow2 position-absolute abs_circle_center "></div>
+                <div class="glow position-absolute abs_circle_left"></div>
+                <div class="glow2 position-absolute abs_circle_center h_156"></div>
 
             </div>
         </div>
         <!-- get started -->
         <section class="started_bg  py-5 position-relative w-100 mt_-2 mb_-2">
-            <div class="section_shado"></div>
-            <div class="section_shado2"></div>
+            <div class="section_shadow"></div>
             <div class="container mycontainer py-lg-5 z-2">
                 <div class="row  ">
                     <div class="box d-flex align-items-center flex-column">
@@ -742,11 +726,8 @@
         </section>
         <!-- footer -->
         <footer class="py-5">
-            <div class="container ">
+            <div class="container-fluid">
                 <div class="row">
-
-
-
                     <div class="row justify-content-center">
                         <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="box">
@@ -868,17 +849,9 @@
         </footer>
     </section>
     <!-- </div> -->
-
-
-    <button onclick="backToTop()" id="topbtn" class="position-fixed backToTop border-0 z-3 ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-            class="bi bi-arrow-up-square " viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-        </svg>
+    <button onclick="backToTop()" id="topbtn" class="position-fixed backToTop border-0 z-3 bg-transparent ">
+        <img src="./assets/images/svg/arrow.svg" alt="arrow" class="top_arrow">
     </button>
-
-
 
     <!-- nav bar js  -->
     <script>
@@ -887,12 +860,16 @@
             document.body.classList.toggle("overflow")
         }
     </script>
+    <!-- nav icon -->
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
     <!-- back to top  -->
     <script>
 
         const topbtn = document.getElementById('topbtn');
-
-
         window.onscroll = function () { topscroll() };
 
         function topscroll() {
@@ -903,7 +880,6 @@
                 topbtn.style.display = "none";
             }
         }
-
 
         function backToTop() {
             document.body.scrollTop = 0;
@@ -1000,6 +976,89 @@
                         centerMode: false
                     }
                 },
+            ]
+        });
+    </script>
+    <script>
+        $('.integration_slider').slick({
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 8000,
+            infinite: true,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            mobileFirst: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        $('.responsive').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
             ]
         });
     </script>
