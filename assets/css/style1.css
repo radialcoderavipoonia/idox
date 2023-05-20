@@ -145,6 +145,20 @@
     --h: 50%;
 }
 
+@keyframes preloader {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
 .preloader::after {
     content: '';
     position: absolute;
@@ -170,6 +184,8 @@
 .preloader_img {
     position: relative;
     z-index: 13;
+    animation-name: preloader;
+    animation-duration: 4s;
 }
 
 .overflow {
@@ -255,7 +271,6 @@
 
 .hover_button:hover {
     box-shadow: 0px 4px 32px rgba(17, 34, 134, 0.5) !important;
-    transform: translateY(-5px);
     transition: all 0.2s linear;
 
 }
