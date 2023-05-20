@@ -67,7 +67,6 @@
 
 .curser-pointer {
     cursor: pointer;
-
 }
 
 .border_style {
@@ -96,9 +95,13 @@
 }
 
 .btn-bg:hover {
-    box-shadow: 0px 4px 32px 0px #2746ED80;
-    transform: scale(1.1);
+    box-shadow: inset 20em 0 0 0 #ffffff;
+    color: #0066FF !important;
     transition: all 300ms linear;
+}
+
+.btn-bg:hover a {
+    color: #0066FF !important;
 }
 
 .tab {
@@ -208,6 +211,14 @@
         top: 55%;
         right: 9%;
         display: flex;
+    }
+
+    .integration_img {
+        transition: all .3s;
+    }
+
+    .integration_img:hover {
+        transform: scale(1.1);
     }
 }
 

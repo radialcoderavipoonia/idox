@@ -23,7 +23,7 @@ body {
 
 }
 
-@media (max-width:1920px) {
+@media (min-width:768px) and (max-width:1920px) {
     .container-fluid{
         padding-left: 50px;
         padding-right: 50px;
