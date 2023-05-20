@@ -31,31 +31,16 @@
     <link rel="stylesheet" href="./assets/css/style4.css">
 </head>
 
-<body>
+<body class="overflow-hidden">
 
-    <!-- =======PRELODER======= --->
-    <div class="position-absolute top-0 start-0 bg-black  w-100 z_11">
-        hello Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, dolorum libero molestiae ipsum, quo
-        quam ullam architecto ipsam in, esse cum. Facere vel recusandae impedit obcaecati assumenda exercitationem culpa
-        laborum?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum expedita eius culpa atque tempore. Suscipit
-        excepturi qui aut eius cum commodi itaque cumque voluptatum, inventore consequuntur a autem voluptatibus sit
-        minus totam non adipisci. Totam nulla expedita officia culpa, vel saepe facilis ipsam dignissimos. Aut, pariatur
-        iure suscipit, nobis unde eos consequatur sint similique tempore atque quis quia molestias distinctio harum
-        corporis hic dolores, quidem soluta veritatis obcaecati reprehenderit. Ex, labore. Nihil officiis, temporibus
-        autem veniam sequi corporis, maiores perspiciatis animi suscipit ex pariatur repellat voluptas adipisci id!
-        Corporis eos a vero repudiandae voluptatibus, provident nobis temporibus non nisi id corrupti facere animi
-        quibusdam doloremque facilis deserunt labore fugiat doloribus! Sequi omnis quibusdam culpa aut atque! Molestias
-        id ipsum iusto architecto doloremque, ad quibusdam, explicabo corporis quos alias provident? Possimus,
-        repellendus distinctio voluptate reprehenderit totam libero vitae assumenda nesciunt explicabo eos alias commodi
-        recusandae facere nihil quo exercitationem perferendis suscipit? Consectetur rerum vel optio, cumque inventore
-        beatae veniam delectus! Cupiditate adipisci impedit maiores nesciunt, nam quidem quis quos in ipsam suscipit
-        saepe aperiam voluptatibus assumenda, laudantium omnis a repudiandae nulla veritatis alias. Nam ducimus rerum
-        accusamus. Culpa, quia modi. Minus neque consequatur repellat sequi cupiditate accusantium similique? Iste,
-        illum temporibus.
-    </div>
+
 
     <section class="bg_body overflow-x-hidden">
+        <!-- =======PRELODER======= --->
+        <div id="preloder"
+            class="position-fixed top-0 start-0  min-vh-100  w-100 preloader d-flex justify-content-center align-items-center">
+            <img class="preloader_img" src="./assets/images/png/logo.png" alt="">
+        </div>
         <!-- hero section starts  -->
         <header class=" position-relative z_11">
             <div class="nav_bg position-fixed w-100 top-0 z_11">
@@ -1091,6 +1076,18 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+
+        let preLoader = document.querySelector(".preloader");
+        let preLoaderImg = document.querySelector(".preloader_img");
+        let overflowhiddenBody = document.querySelector("body");
+        let y = 0
+        setTimeout(() => {
+            preLoaderImg.style.visibility = "hidden"
+            preLoader.style.setProperty('--h', y + '%')
+
+            document.body.classList.remove("overflow-hidden");
+        }, 3000);
     </script>
 
 </body>

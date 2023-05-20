@@ -138,6 +138,40 @@
     z-index: 11;
 }
 
+
+
+.preloader {
+    z-index: 12;
+    --h: 50%;
+}
+
+.preloader::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+    width: var(--h);
+    left: 0;
+    top: 0;
+    transition: all 300ms linear;
+}
+
+.preloader::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+    width: var(--h);
+    right: 0;
+    top: 0;
+    transition: all 300ms linear;
+}
+
+.preloader_img {
+    position: relative;
+    z-index: 13;
+}
+
 .overflow {
     overflow: hidden;
 }
