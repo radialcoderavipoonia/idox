@@ -214,6 +214,10 @@
     height: 10px;
 }
 
+.pointer-none {
+    pointer-events: none;
+}
+
 /* We Provide Secure Solutions */
 .learn_btn {
     background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);

@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Primary Meta Tags -->
+    <title>iDox</title>
+    <meta name="title" content="iDox">
+    <meta name="description" content="AI powered document compliance solution">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://transcendent-crumble-aeafea.netlify.app/">
+    <meta property="og:title" content="iDox">
+    <meta property="og:description" content="AI powered document compliance solution">
+    <meta property="og:image" content="./assets/images/png/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://transcendent-crumble-aeafea.netlify.app/">
+    <meta property="twitter:title" content="iDox">
+    <meta property="twitter:description" content="AI powered document compliance solution">
+    <meta property="twitter:image" content="./assets/images/png/logo.png">
     <title>idox</title>
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -487,7 +507,8 @@
         </section>
 
         <!-- 3rd section  -->
-        <section class="py-5 my-3">
+        <section class="py-5 my-3 position-relative">
+            <div class="glow position-absolute abs_circle_center"></div>
             <div class="container mycontainer">
                 <h4 class="ff_plus_jakarta color_white text-center fs_5xl fw-medium mb-0 z-2">How it works</h4>
                 <p class="text-center ff_plus_jakarta color_white opacity-70 mb-0 py-2 z-2">Only 2 minutes redacting a
@@ -701,7 +722,7 @@
                                         <p class="pl_23 secound_paras">Maximum 100 pages per doc.</p>
                                     </div>
                                 </div>
-                                <div class="pt-lg-5 pb-4"><button class="transition_300ms">Select</button></div>
+                                <div class="pt-lg-5 pb-4 "><button class="transition_300ms">Select</button></div>
                             </div>
                         </div>
                     </div>
@@ -1075,7 +1096,9 @@
     <!-- aos js  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
 
 
         let preLoader = document.querySelector(".preloader");
@@ -1085,7 +1108,7 @@
         setTimeout(() => {
             preLoaderImg.style.visibility = "hidden"
             preLoader.style.setProperty('--h', y + '%')
-
+            preLoader.classList.add('pointer-none')
             document.body.classList.remove("overflow-hidden");
         }, 3000);
     </script>
