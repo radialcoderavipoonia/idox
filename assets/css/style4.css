@@ -292,9 +292,6 @@ footer h3 {
 }
 
 
-
-
-
 @media (min-width:992px) {
     .bottom_row_border::before {
         content: '';
@@ -310,8 +307,6 @@ footer h3 {
     }
 
     .best_plan_s .border_r {
-
-
         border-right: 1px solid #fbfdff51;
 
     }
