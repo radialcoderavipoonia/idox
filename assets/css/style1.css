@@ -348,7 +348,7 @@
         height: 100vh;
         background-color: #020D15 !important;
         backdrop-filter: blur(16.5px);
-        z-index: 99 !important;
+        z-index: 1000 !important;
         transition: all .5s;
     }
 
