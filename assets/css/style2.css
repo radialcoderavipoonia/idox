@@ -227,12 +227,20 @@
     box-shadow: 0px 4px 32px rgba(39, 70, 237, 0.5);
 }
 
-.service_card1_hover {
+.service_card {
     transition: all .3s;
 }
 
-.service_card2_hover:hover.service_card3_hover {
-    opacity: 0.5;
+.service_card:hover {
+    transform: rotateY(50deg);
+}
+
+.taa_card{
+    transition: all .3s;
+}
+
+.taa_card:hover{
+    transform: translateY(-53px) rotateY(50deg);
 }
 
 @media (max-width:600px) {
